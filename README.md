@@ -19,6 +19,7 @@ eg. int var = 9;
 
 * The pointers in arrays
 
+'''
 #include <stdio.h>
 
 int main() {
@@ -29,5 +30,5 @@ int main() {
         sum += *p;
         printf("The sum is %d", sum);
 }
-
+'''
 
