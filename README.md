@@ -19,18 +19,35 @@ eg. int var = 9;
 
 * The pointers in arrays
 
-''' c
-    
-	#include <stdio.h>
+        #include <stdio.h>
+  
+    	int main() {
+		int a[] = {11, 12, 13, 14, 15};
+		int sum = 0, *p;
 
-    int main() {
-
-	int a[] = {11, 12, 13, 14, 15};
-	int sum = 0, *p;
-	
-    for(p = &a[0]; p <= &a[4]; p++)
+    	for(p = &a[0]; p <= &a[4]; p++)
         sum += *p;
         printf("The sum is %d", sum);
+		}
+
+  
+* Reverse order of array using pointer
+
+c
+    
+	#include <stdio.h>
+	#define N 5
+	int main() {
+    int a[N], * p;
+    printf("Enter %d elements in the array:", N);
+    for (p = a; p <= a + N - 1; p++)
+        scanf("%d", p);
+
+    printf("Elements in reverse array are:\n");
+    for (p = a+N-1; p >= a; p--)
+        printf("%d ", *p);
+
+    return 0;
 	}
-'''
+
 
