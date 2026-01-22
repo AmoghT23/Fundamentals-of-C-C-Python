@@ -19,16 +19,18 @@ eg. int var = 9;
 
 * The pointers in arrays
 
-'''
-#include <stdio.h>
+''' c
+    
+	#include <stdio.h>
 
-int main() {
+    int main() {
+
 	int a[] = {11, 12, 13, 14, 15};
 	int sum = 0, *p;
 	
     for(p = &a[0]; p <= &a[4]; p++)
         sum += *p;
         printf("The sum is %d", sum);
-}
+	}
 '''
 
