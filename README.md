@@ -16,3 +16,18 @@ eg. int var = 9;
  The memory will be allocated for the integer that contains value 7. The address of the memory is A1.
  The address value of var will be stored in "*ptr" (pointer variable). The pointer variable will store the address of another pointer. 
  "*" dereference operator (indirection operator) and "&" is the address of operator. 
+
+* The pointers in arrays
+
+#include <stdio.h>
+
+int main() {
+	int a[] = {11, 12, 13, 14, 15};
+	int sum = 0, *p;
+	
+    for(p = &a[0]; p <= &a[4]; p++)
+        sum += *p;
+        printf("The sum is %d", sum);
+}
+
+
