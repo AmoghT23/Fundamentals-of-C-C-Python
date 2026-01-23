@@ -46,4 +46,10 @@ c
     return 0;
 	}
 
+* How to calculate the memory location of a specific item in an array.
+-> Find the starting point of the memory addresses, then calculate the number of elements that we have to travel to get to that element.
+-> Multiply the number of elements to the size of the data-type.
+-> Here the address and the pointer help us as they mark or point data that we want.
+   
 
+  
